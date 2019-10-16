@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="buu.informatics.c59160130.miniproject02.herbsHomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/herbsHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="395dp"
+                android:layout_height="392dp" tools:layout_editor_absoluteY="203dp"
+                tools:layout_editor_absoluteX="8dp" tools:ignore="MissingConstraints" android:id="@+id/herbsList01"/>
+        <Button
+                android:text="กลุ่มอาการ"
+                android:layout_width="207dp"
+                android:layout_height="55dp" tools:layout_editor_absoluteY="140dp"
+                tools:layout_editor_absoluteX="207dp" android:id="@+id/diseaseType_button01"
+                tools:ignore="MissingConstraints"/>
+        <Button
+                android:text="สมุนไพรประจำบ้าน"
+                android:layout_width="205dp"
+                android:layout_height="57dp" tools:layout_editor_absoluteY="138dp"
+                tools:layout_editor_absoluteX="-4dp" android:id="@+id/homeHerb_button01"
+                tools:ignore="MissingConstraints"/>
+        <TextView
+                android:text="พืชสมุนไพร"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/herbs_textView03" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="8dp" android:layout_marginTop="44dp"
+                app:layout_constraintTop_toTopOf="parent" android:textSize="30sp"
+                android:textColor="@color/colorPrimary"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
